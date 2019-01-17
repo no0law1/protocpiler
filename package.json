@@ -1,0 +1,31 @@
+{
+  "name": "protocpiler",
+  "version": "1.0.0",
+  "description": "Generates javascript or typescript files based on proto files",
+  "main": "index.js",
+  "files": [
+    "bin/protocpiler.js",
+    "src"
+  ],
+  "bin": {
+    "protocpiler": "./bin/protocpiler.js",
+    "protoc": "./tools/bin/protoc.exe"
+  },
+  "scripts": {
+    "generate": "./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/no0law1/protocpiler.git"
+  },
+  "author": "Nuno Reis <nuno.m.reis@netcabo.pt>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/no0law1/protocpiler/issues"
+  },
+  "homepage": "https://gitlab.com/no0law1/protocpiler#readme",
+  "dependencies": {
+    "yargs": "^12.0.5"
+  }
+}
