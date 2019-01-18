@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+ 
+message Test
+{
+    google.protobuf.Timestamp aTimestamp = 1; 
+    google.protobuf.StringValue aString = 2;
+    google.protobuf.Int32Value anInteger = 3;
+    google.protobuf.BoolValue aBoolean = 4;
+}
+ 

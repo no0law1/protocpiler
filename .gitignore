@@ -2,8 +2,9 @@
 # Created by https://www.gitignore.io/api/node,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=node,visualstudiocode
 
-### Personal ###
-test/
+### Ignore Generated Code ###
+*_pb.d.ts
+*_pb.js
 
 ### Node ###
 # Logs
