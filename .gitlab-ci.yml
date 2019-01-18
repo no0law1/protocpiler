@@ -1,0 +1,8 @@
+stages:
+  - publish
+
+
+publish:
+  stage: publish
+  script: npm publish
+  only: ['web']
