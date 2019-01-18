@@ -6,5 +6,5 @@ test:
   stage: test
   script:
     - npm install
-    - npm run test
+    - node ./bin/protocpiler.js typescript /test /test
   only: ['web']
