@@ -3,6 +3,7 @@ stages:
 
 
 publish:
+  image: node
   stage: publish
   script: npm publish
   only: ['web']
