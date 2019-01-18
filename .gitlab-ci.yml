@@ -1,9 +1,8 @@
 stages:
   - publish
 
-
 publish:
   image: node
   stage: publish
-  script: npm publish
+  script: npm test
   only: ['web']
