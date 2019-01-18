@@ -12,7 +12,7 @@
     "protoc": "./tools/bin/protoc.exe"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "protocpiler typescript /test /test"
   },
   "repository": {
     "type": "git",

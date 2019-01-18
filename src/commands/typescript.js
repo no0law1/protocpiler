@@ -1,3 +1,5 @@
+const path = require('path');
+
 const command = 'typescript [input_dir] [output_dir]';
 
 const describe = 'Generate Typescript for protos';
@@ -5,7 +7,6 @@ const describe = 'Generate Typescript for protos';
 const builder = { };
 
 const handler = function (argv) {
-    const path = require('path');
     const { findProtoc, findProtos } = require('../utils/find');
     const { execFile } = require('child_process');
 

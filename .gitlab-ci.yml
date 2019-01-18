@@ -1,9 +1,10 @@
 stages:
-  - publish
+  - test
 
-
-publish:
+test:
   image: node
-  stage: publish
-  script: npm publish
+  stage: test
+  script:
+    - npm install
+    - npm test
   only: ['web']
