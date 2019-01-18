@@ -16,11 +16,11 @@ const handler = function (argv) {
     const options = [
         '--proto_path=' + path.join(process.cwd(), argv.input_dir),
         '--js_out=import_style=commonjs:' + path.join(process.cwd(), argv.output_dir)
-    ]
+    ];
 
     const protos = findProtos(path.join(process.cwd(), argv.input_dir));
 
-    const child = execFile('protoc', options.concat(protos), { cwd: protoc, env: { PATH: process.env["PATH "]} }, (error, stdout, stderr) => {
+    const child = execFile('protoc', options.concat(protos), { cwd: protoc }, (error, stdout, stderr) => {
         if (error) {
             console.error('ERROR: ', error);
         }
