@@ -11,8 +11,6 @@ const handler = function (argv) {
 
     const protoc = findProtoc();
 
-    process.env["PATH"] += ';' + protoc;
-
     const options = [
         '--proto_path=' + path.join(process.cwd(), argv.input_dir),
         '--js_out=import_style=commonjs:' + path.join(process.cwd(), argv.output_dir)

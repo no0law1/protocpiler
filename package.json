@@ -12,13 +12,20 @@
     "protoc": "./tools/bin/protoc.exe"
   },
   "scripts": {
-    "generate": "./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@gitlab.com/no0law1/protocpiler.git"
   },
+  "keywords": [
+    "protobuf",
+    "protoc",
+    "builder",
+    "typescript",
+    "javascript",
+    "protocol-buffer"
+  ],
   "author": "Nuno Reis <nuno.m.reis@netcabo.pt>",
   "license": "ISC",
   "bugs": {
