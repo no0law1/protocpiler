@@ -1,6 +1,6 @@
 {
   "name": "protocpiler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates javascript or typescript files based on proto files",
   "main": "index.js",
   "files": [
@@ -8,11 +8,12 @@
     "src"
   ],
   "bin": {
+    "protoc-gen-ts": "./node_modules/.bin/protoc-gen-ts.cmd",
     "protocpiler": "./bin/protocpiler.js",
     "protoc": "./tools/bin/protoc.exe"
   },
   "scripts": {
-    "test": "protocpiler typescript /test /test"
+    "test": "node ./bin/protocpiler typescript /test /test"
   },
   "repository": {
     "type": "git",

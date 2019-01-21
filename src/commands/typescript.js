@@ -22,7 +22,7 @@ const handler = function (argv) {
 
     const protos = findProtos(path.join(process.cwd(), argv.input_dir));
 
-    const child = execFile('protoc', options.concat(protos), { cwd: protoc }, (error, stdout, stderr) => {
+    const child = execFile('protoc.cmd', options.concat(protos), { cwd: protoc }, (error, stdout, stderr) => {
         if (error) {
             console.error('ERROR: ', error);
         }
