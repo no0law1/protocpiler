@@ -7,10 +7,10 @@ const describe = 'Generate Typescript for protos';
 const builder = { };
 
 const handler = function (argv) {
-    const { findProtoc, findProtos } = require('../utils/find');
+    const { findProtos } = require('../utils/find');
     const { execFile } = require('child_process');
 
-    const protoc = findProtoc();
+    const protoc = path.join(__dirname, '..', '..', 'tools', 'bin');
     const protoc_gen_ts = path.join(process.cwd(), 'node_modules', '.bin');
 
     const options = [
@@ -22,7 +22,7 @@ const handler = function (argv) {
 
     const protos = findProtos(path.join(process.cwd(), argv.input_dir));
 
-    const child = execFile('protoc.cmd', options.concat(protos), { cwd: protoc }, (error, stdout, stderr) => {
+    const child = execFile('protoc.exe', options.concat(protos), { cwd: protoc }, (error, stdout, stderr) => {
         if (error) {
             console.error('ERROR: ', error);
         }

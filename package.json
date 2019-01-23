@@ -1,19 +1,19 @@
 {
   "name": "protocpiler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generates javascript or typescript files based on proto files",
   "main": "index.js",
   "files": [
     "bin/protocpiler.js",
-    "src"
+    "src",
+    "tools"
   ],
   "bin": {
-    "protoc-gen-ts": "./node_modules/.bin/protoc-gen-ts.cmd",
-    "protocpiler": "./bin/protocpiler.js",
-    "protoc": "./tools/bin/protoc.exe"
+    "protocpiler": "./bin/protocpiler.js"
   },
   "scripts": {
-    "test": "node ./bin/protocpiler typescript /test /test"
+    "test-js": "node ./bin/protocpiler javascript /test /test",
+    "test-ts": "node ./bin/protocpiler typescript /test /test"
   },
   "repository": {
     "type": "git",
@@ -34,9 +34,7 @@
   },
   "homepage": "https://gitlab.com/no0law1/protocpiler#readme",
   "dependencies": {
-    "yargs": "^12.0.5"
-  },
-  "devDependencies": {
+    "yargs": "^12.0.5",
     "google-protobuf": "^3.6.1",
     "ts-protoc-gen": "^0.9.0"
   }
