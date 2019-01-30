@@ -1,25 +1,43 @@
 # Protocpiler
----
+
 Protocpiler generates javascript or typescript files based on a proto contract.
 
 It contains the protoc executable from Google which is used to create your wanted files.
 
-# Instalation
----
-### Using npm
-> npm install protocpiler
+### Installing
 
-### Using yarn
-> yarn add protocpiler
+Using npm
+```
+npm install protocpiler --save
+```
 
-# How to use
----
+Using yarn
+```
+yarn add protocpiler
+```
+
+
+## Running
+
 From proto to typescript
-> protocpiler typescript <input_dir> <output_dir>
+```
+protocpiler typescript <input_dir> <output_dir>
+```
 
 From proto to javascript
-> protocpiler javascript <input_dir> <output_dir>
+```
+protocpiler javascript <input_dir> <output_dir>
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
 
 # TODO
----
  * Build with babel

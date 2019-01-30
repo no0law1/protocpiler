@@ -1,6 +1,6 @@
 {
   "name": "protocpiler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generates javascript or typescript files based on proto files",
   "main": "index.js",
   "files": [
